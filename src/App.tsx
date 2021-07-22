@@ -5,7 +5,6 @@ import Number from "./Number";
 
 interface Istate {
   counter: number;
-  name: string;
 }
 
 class App extends Component<{}, Istate> {

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { VoidExpression } from "typescript";
 
 interface IInputProps {
   value: string;
@@ -15,10 +14,9 @@ export const Input: React.FunctionComponent<IInputProps> = ({
 );
 
 interface IFormProps {
-  onFormSubmit: (event: React.FormEvent) => void;
+  onFormSubmit: (evnet: React.FormEvent) => void;
 }
 
-// React Component는 children이라는 prop을 가질 수 있다.
 export const Form: React.FunctionComponent<IFormProps> = ({
   children,
   onFormSubmit,
